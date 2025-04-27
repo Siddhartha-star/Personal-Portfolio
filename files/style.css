@@ -1631,3 +1631,31 @@ h3 {
         padding-left: 25px;
     }
 }
+
+
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px; /* Adjust the gap between image and content */
+}
+
+.home .img {
+    flex: 0 0 auto; /* Prevents the image from shrinking */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .img img {
+    border-radius: 50%;
+    width: 250px; /* Adjust the size as needed */
+    height: 250px; /* Adjust the size as needed */
+    object-fit: cover; /* Ensures the image is cropped to a perfect circle */
+}
+
+.home .content {
+    flex: 1; /* Makes sure the content takes the remaining space */
+    font-size: 1.2rem; /* Adjust font size as needed */
+}
